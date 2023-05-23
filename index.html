@@ -1,31 +1,452 @@
 <head> <meta http-equiv="Content-type" content="text/html;charset=UTF-8"></head>
-<div class="mbr-container">
-    <h1>Houston Evictions</h1>
-<h2>3 day notice to vacate</h2><br>
-<h3>Houston Evictions</h3>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3 Day Notice to Vacate</title>
+</head>
+<style>
+    @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+/* Global Styles */
+
+* {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body { 
+  padding: px 0%;
+  background: #d8a502;
+}
+
+a{
+  text-decoration: none;
+}
+
+/* Container Styles */
+.container {
+  display: flex;
+  height: 89vh;
+}
+.main-wrapper{
+
+  flex: 2;  overflow-y: scroll;
+}
+.side-bar{
+  background: #faf9f9;
+  flex: .3;
+  padding: 40px;
+  /* background-color: white; */
+}
+
+.side-bar ul{
+  padding: 0 40px;
+  list-style: none;
+}
+
+.side-bar{
+  background: rgb(230, 230, 231);
+}
+
+
+@media only screen and (max-width: 900px) {
+  .container {
+    flex-direction: column;
+  }
+  .side-bar{
+    background: #114;
+    color: white !important;
+  }
+  .side-bar a{
+    color: white !important;
+  }
+}
+
+/* Navigation Menu Styles */
+
+nav.nav-menu {
+  width: 100%;
+  background-color:#000000;
+  padding: 10px;
+}
+
+nav.nav-menu ul {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  list-style: none;
+  font-size: clamp(.8rem, 1.2vw, 2rem); 
+}
+
+.nav-menu .nav-item {
+  padding: 10px;
+  transition: background-color 500ms ease-in-out;
+}
+
+.nav-menu .nav-item:hover {
+  cursor: pointer;
+  background-color: #f5f5f54d;
+}
+
+.nav-menu .nav-item a{
+  text-decoration: none;
+  color: white;
+}
+
+
+/* Main Content Wrapper Styles */
+.main-wrapper {
+  background: white;
+}
+
+section {
+  margin-bottom: 50px;
+}
+
+section.head,
+section.youtube-embed {
+  text-align: center;
+}
+
+.button-link {
+  display: block;
+  margin: 20px 0 0 0;
+  padding: 10px 25px;
+  width: fit-content;
+  background: #d8a502;
+  border-radius: 0px;
+  text-decoration: none;
+  color: white;
+  transition: 0.3s transform ease-in-out;
+  text-align: center;
+}
+
+.button-link-red {
+  display: block;
+  margin: 20px 0 0 0;
+  padding: 10px 25px;
+  width: fit-content;
+  background: #c70000;
+  border-radius: 0px;
+  text-decoration: none;
+  color: white;
+  transition: 0.3s transform ease-in-out;
+  text-align: center;
+}
+
+.button-link-blue {
+  display: block;
+  margin: 20px 0 0 0;
+  padding: 10px 25px;
+  width: fit-content;
+  background: #003299;
+  border-radius: 0px;
+  text-decoration: none;
+  color: white;
+  transition: 0.3s transform ease-in-out;
+  text-align: center;
+}
+
+.button-link-green {
+  display: block;
+  margin: 20px 0 0 0;
+  padding: 10px 25px;
+  width: fit-content;
+  background: #326600;
+  border-radius: 0px;
+  text-decoration: none;
+  color: white;
+  transition: 0.3s transform ease-in-out;
+  text-align: center;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+h2 {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  text-align: center;
+  font-size: 30px;
+}
+h4 {
+  font-size: 25px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+ul{
+  padding-left: 30px;
+  }
+  
+  .side ul{
+    text-align: justify;
+    margin-bottom: 10px;
+    line-height: 1.5rem;
+    font-family: "Cormorant SC", sans-serif;
+    font-size:30px;
+
+  }
+
+  ol{
+    padding-left: 40px;
+    }
+    
+    .side ol{
+      text-align: justify;
+      margin-bottom: 10px;
+      line-height: 1.5rem;
+      font-family: "Cormorant SC", sans-serif;
+      font-size:30px;
+  
+    }
+
+p {
+  text-align: justify;
+  margin-bottom: 10px;
+  line-height: 1.5rem;
+}
+
+img {
+  max-width: 100%;
+  float: left;
+  border-radius: 10px;
+  margin: 15px;
+}
+
+.two-col {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  background: white;
+}
+
+.two-col div {
+  width: 100%;
+}
+
+@media only screen and (max-width: 900px) {
+  body {
+    padding: 20%;
+  }
+
+  .two-col {
+    flex-direction: column;
+  }
+
+  .two-col div {
+    width: 100%;
+  }
+
+  .main-wrapper {
+    padding: 5%;
+  }
+}
+.hero-image {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.822), rgba(0, 0, 0, 0.719)), url("https://www.houstonevictions.com/wp-content/uploads/2016/09/computer-3365366_641x500-400x250.jpg");
+  /* Set a specific height */
+  height: 450px;
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+/* Place text in the middle of the image */
+.hero-text {
+  text-align: left;
+  position: absolute;
+  top: 40%;
+  left: 35%;
+  transform: translate(-30%, -30%);
+  color: #ffffff(255, 255, 255);
+  font-weight:500;
+  font-size: 16px;
+  width: 100%;
+  padding: 20px;
+}
+
+.boxsolid {
+    border: solid 2px;
+    margin: 50px;
+}
+
+.em {
+    text-align: center;
+    padding: 0px 0px 0px 40px;
+}
+
+.em2 {
+    text-align: center;
+    padding: 0px 30px 0px 30px;
+}
+
+
+</style>
+<div class="two-col">
+        <div style="display: flex ; justify-content: center;padding-left: 50px;"> <a href="https://www.houstonevictions.com/"><img style="height: 60px;width: 150px;" src="https://www.houstonevictions.com/wp-content/uploads/2017/05/houston-evictions-logo-black-272x83.png" alt="Houston evictions"></a></div>
+        <div style="display: flex; justify-content: center; text-align: center;font-size: 20px;font-weight: bolder;padding-top: 50px;"><a href="Tel:832-701-7172"><span style="color: black;"> 832-701-7172</span></a></div>
 </div>
-<br>
-<img src="https://www.houstonevictions.com/wp-content/uploads/2020/01/leasing-tips-for-landlords-1024x576.png" alt="" id="1038418140" class="" data-dm-image-path="https://www.houstonevictions.com/wp-content/uploads/2020/01/leasing-tips-for-landlords-1024x576.png" onerror="handleImageLoadError(this)" width="681.984375" height="454.65625">
-<br> <br>
-<h1>Houston Evictions</h1>
-<p>
-    Leasing tips for proprietors include the application process, lease contract, the property itself and what is considered actual wear and tear of a house. If you have a house with carpets over 10 years old, there is going to be regular wear and tear that you can not charge an occupant for when the vacate the facilities. You can not charge them to paint the rooms if someone rents the home or house for five years and leaves the properties. You can nevertheless charge for any damage to the walls.
-</p>
-<p>You can seek an eviction notification even if there is a lease if you have a tenant that is causing issues with the other renters. You do, however, have to show that a problem exists that is interfering with the other occupants. Because you do not like the friends of somebody is no factor to begin expulsion procedures, simply. If you feel there is an overabundance of traffic would be a reason to kick out that renter, however, you must talk to them prior to starting the eviction process.</p>
-<p>You can expect some repair work that may be required over the course of leasing if you rent to a large family. It might be small, however, if something blocks the toilet, you might want to have the name of a plumbing technician all set for the occupants to call if you do not do your own work. This holds true for heater repair, leaking pipes and any repair work due to the age of the house and components.</p>
-<p>Since you are not supplying correct lodgings, you must keep your homes up to standards or renters can file a grievance with the city or town. This indicates everything must be working correctly and the renters require security from the elements. You do however have some advantages if renting to low-income households, you may get approved for energy effective repairs to your property without a cost to you.</p>
-<p>This works by signing a contract that the parties will stay living there for a proper length of time and you will not evict them. You require to keep this in mind if somebody asks you to make some upgrades. This will make the residential or commercial property more attractive to somebody looking for a location to live.</p>
-<p>You can detail your specific requirements in the home leasing contract prior to the occupants move into the house. Constantly be really clear on your requirements and guidelines for leasing the condo or house. You have to be extremely clear about that in the rental contract if the rental arrangement is for a specific quantity of individuals and no more than that.</p>
-<p>This safeguards you as a homeowner and it also safeguards the renter from any misunderstandings that can and generally does develop. The lease should be really particular about anything you desire the tenant to know before renting from you.</p>
-<p>Leasing pointers for property owners consist of the application procedure, lease agreement, the residential or commercial property itself and what is considered real wear and tear of a house. If somebody rents the home or house for five years and vacates the properties, you can not charge them to paint the rooms. If you lease to a big household, you can anticipate some repairs that may be needed over the course of leasing. You can describe your specific requirements in the condo renting arrangement prior to the tenants move into the condo.</p>
-<br><br>Find more information here: <a href="https://www.houstonevictions.com/">Houston Evictions
-</a><br><br>
-Houston, TX<br>
-2429 Bissonnet St #545, Houston, TX 77005, United States<br>
-+18327017172<br>
-<a
-href="https://goo.gl/maps/pAewYsZLPjEpDmSo9">https://goo.gl/maps/pAewYsZLPjEpDmSo9#Legal_services</a>
-<br>
-<br>
-<br><br><br><br>
- </div>
+<body>
+    <!--Navigation Menu-->
+    <nav class="nav-menu">
+        <ul style="display: flex;justify-content: center;">
+            <li class="nav-item"><a href="https://www.houstonevictions.com/">Main</a></li>
+            <li class="nav-item"><a href="https://www.google.com/maps?cid=15279648663041070693">Maps</a></li>
+            <li class="nav-item"><a href="#">Media</a></li>
+                        <!--GStack-->
+            <li class="nav-item"><a href="#">(G-Site)</a></li>
+                        <!--Business Sites-->
+            <li class="nav-item"><a href="#">(Primary Keyword & Location)</a></li>
+        </ul>
+    </nav>
+
+    <!---Main Container-->
+    <div class="container">
+
+        <!--Main Wrapper-->
+        <div class="main-wrapper">
+            <section class="head">
+                <div class="hero-image">
+                 <div class="hero-text">
+                        <h4>3 Day Notice to Vacate – Hand Delivered – A Must For Rent Due</h4>
+                     <br>
+                     <div style="display: flex;justify-content: left;">
+                         <a class="button-link-red" href="https://www.houstonevictions.com/start/">Start the Eviction</a>
+                     </div>
+                     <div style="display: flex;justify-content: left;">
+                        <a class="button-link-blue" href="https://www.houstonevictions.com/eviction-products/">Pay Here</a>
+                    </div>
+                    <div style="display: flex;justify-content: left;">
+                        <a class="button-link-green" href="https://www.houstonevictions.com/wp-content/uploads/2011/11/RentLedger.pdf">Download Ledger</a>
+                    </div>
+                 </div>
+                </div>
+             </section>
+
+            <!--Content-->
+            <div class="two-col" >
+                <div class="em"><p>When can you deliver a 3 Day Notice to Vacate in Houston Texas?  The short answer is the next day after the rent is due. With most lease agreements the rent is usually due on the first day of the month, no matter whether this is a weekend or vacation unless various terms are specified in the lease or rental arrangement. For example, a Texas rental agreement may supply that the rent will be due on the next day if the due date falls on a weekend or holiday.</p></div>
+                <div class="em"><img class="size-medium alignright" src="https://www.houstonevictions.com/wp-content/uploads/2016/03/Eviction-in-Houston-300x193.jpg" width="300" height="193" /></div> 
+            </div>
+
+            <div class="boxsolid">
+                <h2 class="em2">When is the Lease Is Considered Late and When to Deliver the 3 Day Notice to Vacate?</h2>
+                <p class="em2">Now that we have established when we can deliver the 3 Day Notice to Vacate the day after the rent is due, we are now ready to file the Forcible Entry and Detainer lawsuit with the Houston Courts, since the tenant has not paid the rent.  Unless otherwise agreed to in the lease or rental contract, the rent is considered late the day after it is due.  So proceed with your eviction and deliver the notice.  Don’t wait!  We see sympathetic landlords get taken advantage of all the time, the tenant certainly will not reciprocate those feelings.</p>
+                <p class="em2">Let Houston Evictions hand deliver your 3 day notice to vacate if you have not already done so. This way you know it will be done right and you don’t have to deal with the tenant.  We handle everything and you can feel more at ease.</p>
+                <p class="em2">If you are searching for a “3 Day Notice to Vacate near me” call us we hand deliver eviction notices all over Harris County, Fort Bend, and Galveston.</p>
+            </div>
+
+            <section class="em2">
+                <h2>Landlord Options for Accepting Late Rent</h2>
+                <p>In some states, when provided an eviction notice, renters have the option to either pay the late rent or move out of the rental. If the occupant pays the lease, then the eviction procedures do not continue. In Texas, the landlord gets to decide whether the renter has the option to pay the lease or leave.  But always deliver a 3 Day Notice to Vacate to get the process going. Don’t even lose one day.</p>
+                <p>If the landlord chooses to offer the occupant the alternative to pay the late rent, then the landlord has to inform the renter in composing that the occupant owes rent. This notification must take place prior to the landlord offers the occupant a 3 Day Notice to Vacate eviction notice. If the landlord offers this notice to the tenant, then the Notice to Vacate can offer the renter the alternative to either pay the rent or move out. If the renter pays the rent, then the eviction proceedings will not continue (see Tex. Prop. Code Ann.</p>
+                <p>§ 24.005(i)). If the landlord does not send out a notice to the tenant about owing rent before sending the tenant a Notice to Vacate, then the only option that will be available to the tenant in the Notice to Vacate is to vacate.</p>
+                <h2>When to Charge Late Fees for an Eviction for Failure to Pay the Lease in Texas</h2>
+                <div class="two-col">
+                  <img class="size-medium alignright" src="https://www.houstonevictions.com/wp-content/uploads/2016/03/Notice-to-Vacate-228x300.png" width="228" height="300" />
+                    <div><p>Under Texas building laws (Tex. Prop. Code Ann. § 92.019), a landlord needs to supply a minimum of a one-day grace period prior to charging a renter late charge. But under state law, there is no grace period before a landlord can offer an occupant an eviction notice for failure to pay rent. This implies that a landlord can provide an occupant an eviction notice the day after the lease is due).</p>
+                      <p>As soon as the landlord offers the tenant a Notice to Vacate, the occupant has 3 days to pay the rent (if that alternative is available to the renter) or leave the rental home. The 3 days start on the date the notice is provided to the tenant. Weekends and holidays are included in the three-day duration. Under state building law (Tex. Prop. Code Ann. § § 24.005 (a)and( g)), the lease or rental arrangement might allow for a longer or much shorter time period than 3 days.</p>
+                      <span style="font-size: 20px; font-weight: 600;">Details to Consider in Preparation of Texas Eviction Notices</span><br>
+                      <span style="font-size: 16px; font-weight: 600;">The Notice to Vacate need to be in composing, and consist of the following info:</span>
+                      <ul>
+                        <li><p>date the notice was served on the tenant(s).</p></li>
+                        <li><p>name(s) and address of renter(s) rental.</p></li>
+                        <li><p>the reason for the notice (that the occupant failed to pay rent for a specified period of time). a declaration that the renter has 3 days to leave, including the final date and time by which the renter must be out of the home.</p></li>
+                        <li><p>a final notice that the landlord might pursue legal action (an eviction suit) if the tenant does not move, and.</p></li>
+                        <li><p>a declaration specifying how the notice was offered to the tenant, either by in fact giving the notice to the occupant or mailing the notice.</p></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div>
+                    <p>If the renter has the option to pay rent, then the notice needs to be consistent with that statement so that the tenant has 3 days to either pay the lease due and owing or leave.</p>
+                    <p>If an eviction notice is missing key details, such as the time and date the renter needs to be moved out of the rental unit, then the eviction notice will not be considered valid and the 3 Day Notice to Vacate will not be recognized by the courts. The landlord would then need to provide a new notice to the renter, starting a new three-day period, and the notice would need to consist of all the information listed above.</p>
+                    <h2 style="font-size: 30px; font-weight: 600;">How Landlords Have to Serve Eviction Notices in Texas.</h2>
+                    <p>Landlords in Texas have 4 alternatives for serving a Notice to Vacate under Tex. Prop. Code Ann. § 24.005(f):</p>
+                    <ul>
+                      <li><p>  The landlord, or an agent of the landlord, can personally hand deliver the notice to the occupant or to somebody who is 16 years or older who resides in the rental building.</p></li>
+                      <li><p>The landlord can post the notice on the inside of the front door of the rental. The landlord can only use this option if the landlord is able to get in the properties legitimately, for instance, with a key.</p></li>
+                      <li><p>The landlord can mail a copy of the Notice to Vacate by regular mail, registered mail, or certified mail. If the landlord mails the notice, then the landlord needs to request a return receipt.</p></li>
+                      <li><p>If the rental building does not have a mail box to receive mail and the landlord can not lawfully go into the rental unit to post the notice inside the front door, then the notice can be posted on the outside of the front door of the property. If the occupant has an unsafe animal, such as a guard dog, or an alarm, that restricts the landlord from getting in the property, then the notice can be firmly posted on the front gate or other noticeable part of the main entry to the rental unit.</p></li>
+                    </ul>
+                    <div>
+                      <p>If the landlord does not serve the notice properly, then the landlord needs to create a brand-new notice and start the process over. The 3 days’ notice will not be in effect until the landlord serves the occupant in one of the ways listed above.</p>
+                      <h2>Occupant Alternatives When Served With Notice to Vacate for Nonpayment of Rent in Texas.</h2>
+                      <span style="font-style: italic; font-weight: 600; font-size: 24px;">What happens next depends on the tenant’s response to the eviction notice:</span>
+                      <div class="two-col">
+                          <div><p>If the occupant has the alternative to pay the lease within the three-day amount of time and does so, then the landlord must not proceed with the eviction.</p>
+                                <p>If the renter does not pay the rent, however moves out within 3 days, the landlord might use the tenant’s down payment (if any) to cover the unsettled lease. If the down payment does not cover all the lease due and owing, consisting of late charges, then the landlord can sue the occupant for the rent still owed (see Tex. Prop. Code Ann. § 24.0051). If the occupant does not pay the complete rent within the three-day time period and does not move from the building, then the landlord can continue to submit a summons and grievance with the Texas justice court. This case is called a forcible detainer suit.</p>
+                                <p style="font-size: 30px; font-weight: 600;">Eviction Lawsuits in Texas Justice Court.</p>
+                                <p>The landlord needs to effectively win the forcible detainer case in the court before a constable can legitimately secure the property. It is extremely important that landlords do not participate in “self-help” practices (such as changing the locks or shutting down the utilities) and they must follow the procedures of the forcible detainer complaint.</p>
+                                <p>More information about filing the problem in justice court can be discovered in <a href="http://www.statutes.legis.state.tx.us/Docs/PR/htm/PR.24.htm">Tex. Prop. Code Ann. § § 24.0051– 24.0061.</a></p>
+                                <a href="https://www.houstonevictions.com/notice-to-vacate-process">More on eviction notices click here;</a>
+                          </div>
+                          <img class="size-medium alignright" src="https://www.houstonevictions.com/wp-content/uploads/2013/10/collect-from-tenant-300x2711.png" width="228" height="300" />
+                      </div>
+                    </div>
+                  </div>
+            </section>
+
+            <section>
+                <a class="button-link"
+                    href="#">Read Post</a>
+            </section>
+
+            <section>
+                <a class="button-link"
+                    href="#">Visit Us</a>
+            </section>
+
+            <section>
+                <a class="button-link"
+                    href="#">Find Us Here!</a>
+            </section>
+
+            <!--Embeds-->
+            <section>
+
+                <!--Maps-->
+                <!--Things to do-->
+                <!--News-->
+                <!--Website-->
+                <!--Media-->
+                <!--Peartrees-->
+                <!--Business-->
+                <!--Cloudstack-->             
+
+            </section>
+
+            <!--Links-->
+            <section>
+                <a target="_bLank" href="#"></a><br>
+                <a target="_bLank" href="#"></a><br>
+                <a target="_bLank" href="#"></a><br>
+            </section>
+
+        </div>
+
+        <!---Sidebar-->
+        <div class="side-bar">
+            <section>
+                <h2>Useful Links</h2>
+                <ul>
+                    <li><a href="#">Main</a></li>
+                    <li><a href="#">Maps</a></li>
+                    <li><a href="#">Media</a></li>
+                    <li><a href="https://www.youtube.com/@GlennDicksonHoustonEvictions">Youtube</a></li>
+                            <!--Business Sites-->
+                    <li><a href="#">(Primary Keyword & Location)</a></li>
+                </ul>
+            </section>
+        </div>
+    </div>
+    
+</body>
+</html>
